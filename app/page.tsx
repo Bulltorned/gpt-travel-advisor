@@ -25,7 +25,7 @@ export default function Home() {
     }, 7000)
 
     setTimeout(() => {
-      setMessage('Sedikit Lagi ..')
+      setMessage('Sedikit Lagi ...')
     }, 15000)
 
     const response = await fetch('/api/get-itinerary', {
