@@ -16,16 +16,16 @@ export default function Home() {
   const [message, setMessage] = useState('')
   async function hitAPI() {
     if (!request.city || !request.days) return
-    setMessage('Building itinerary...')
+    setMessage('Membuat itinerary...')
     setLoading(true)
     setItinerary('')
 
     setTimeout(() => {
-      setMessage('Getting closer ...')
+      setMessage('Sabar ...')
     }, 7000)
 
     setTimeout(() => {
-      setMessage('Almost there ...')
+      setMessage('Sedikit Lagi ...')
     }, 15000)
 
     const response = await fetch('/api/get-itinerary', {
